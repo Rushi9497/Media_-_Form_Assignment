@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-Up and Sign-In form</title>  
+</head>
+<body>
+    
+    <div style="text-align: center">
+        <h2>Sign-up Form</h2>
+    <form>
+        <label for="Name">Name:</label>
+        <input type="text"placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" placeholder="email" required>
+        <br>
+        <br>
+
+        <label for="Password">Password:</label>
+        <input type="password" placeholder="Password" required>
+        <br>
+        <br>
+
+        <label for="Conform Password">Conform Password:</label>
+        <input type="password" placeholder="Conform Password" pattern="^(?=.[a-z])(?=.[A-Z])(?=.*\d).{8,}$" required>
+        <br>
+        <br>
+
+        <label for="Age">Age:</label>
+        <input type="text" placeholder="Age" required>
+        <br>
+        <br>
+        <label for="Gender">Gender:</label>
+        <select name="Gender" required>
+            <option value="">please select one</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-Binary">Non-Binary</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <div class="tacbox">
+            <input type="checkbox" id="checkbox" required>
+            <label for="checkbox">I agree to these <a href="#">Terms and conditions.</a>
+            </label>
+            <br>
+            <br>
+
+            <input type="submit" value="submit">
+        </div>
+
+    </form>
+
+    <form>
+        <h2>Sign-In</h2>
+        <label for="Sign-In Mail">Your Email</label>
+        <input type="text" placeholder="Email" required>
+        <br>
+        <br>
+        <label for="Password">Password</label>
+        <input type="password" placeholder="Password" pattern="^(?=.[a-z])(?=.[A-Z])(?=.*\d).{8,}$" required>
+        <br>
+        <br>
+
+       <label for="Login"></label>
+        <input type="submit" placeholder="Sign-In">
+
+    </form>
+
+</div>
+    
+</body>
+</html>
